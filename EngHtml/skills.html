@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/skills.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>My Skills</title>
+</head>
+<body>
+    
+    
+    <header class="header">
+        <a href="../index.html" class="logo">
+            R<span>K</span>
+        </a>
+        <nav class="navbar">
+            <a href="../DeuHTML/skills.html">DE</a>
+            <a href="../index.html">Home</a>
+            <a href="aboutMe.html">AboutMe</a>
+            <a href="#">MySkills</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contactMe.html">Contact Me</a>
+        </nav>
+        
+        <div class="hamburger-btn" onclick="openNavBar()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav class="mobile-navbar">
+            <a href="../DeuHTML/skills.html">DE</a>
+            <a href="../index.html">Home</a>
+            <a href="aboutMe.html">AboutMe</a>
+            <a href="#">MySkills</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contactMe.html">Contact Me</a>
+        </nav>
+
+    </header>
+
+    <section id="Skills" class="skills">
+        <div class="outerSkillContainer">
+            <div class="skillsContainer">
+                <h2>My Skills</h2>
+                <span>Technical and Professional</span>
+            </div>
+            <div class="mainContainer">
+                <div class="leftPart">
+                    <h3>Technical Skills</h3>
+                    
+                    <div class="tabNames">
+                        <p class="tabs active-link" onclick="switchTabs('software')">Software Skills</p>
+                        <p class="tabs" onclick="switchTabs('mechanical')">Mechanical Skills</p>
+                        <p class="tabs" onclick="switchTabs('tools')">Tools (IDEs)</p>
+                    </div>
+
+                    <div class="skillBody active-tab" id="software">
+                        <div class="skillBar">
+                            <div class="skillInfo">
+                                <p>C++</p>
+                                <p>75%</p>
+                            </div>
+                            <div class="barValue">
+                                <span class="cpp"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="skillBar">
+                            <div class="skillInfo">
+                                <p>Java</p>
+                                <p>75%</p>
+                            </div>
+                            <div class="barValue">
+                                <span class="java"></span>
+                            </div>
+                        </div>
+
+                        <div class="skillBar">
+                            <div class="skillInfo">
+                                <p>Python</p>
+                                <p>45%</p>
+                            </div>
+                            <div class="barValue">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="skillBar">
+                            <div class="skillInfo">
+                                <p>HTML</p>
+                                <p>50%</p>
+                            </div>
+                            <div class="barValue">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="skillBar">
+                            <div class="skillInfo">
+                                <p>CSS</p>
+                                <p>50%</p>
+                            </div>
+                            <div class="barValue">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+
+                        <div class="skillBar">
+                            <div class="skillInfo">
+                                <p>C#</p>
+                                <p>35%</p>
+                            </div>
+                            <div class="barValue">
+                                <span class="cs"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skillBody" id="mechanical">
+                        <div class="skillBar">
+                            <div class="skillInfo">
+                                <p>SolidWorks</p>
+                                <p>75%</p>
+                            </div>
+                            <div class="barValue">
+                                <span class="cpp"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="skillBar">
+                            <div class="skillInfo">
+                                <p>Fusion 360</p>
+                                <p>45%</p>
+                            </div>
+                            <div class="barValue">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+    
+                        <div class="skillBar">
+                            <div class="skillInfo">
+                                <p>Catia</p>
+                                <p>35%</p>
+                            </div>
+                            <div class="barValue">
+                                <span class="cs"></span>
+                            </div>
+                        </div>
+
+                        <div class="skillBar">
+                            <div class="skillInfo">
+                                <p>Ansys</p>
+                                <p>35%</p>
+                            </div>
+                            <div class="barValue">
+                                <span class="cs"></span>
+                            </div>
+                        </div>
+
+                        <div class="skillBar">
+                            <div class="skillInfo">
+                                <p>MATLAB</p>
+                                <p>45%</p>
+                            </div>
+                            <div class="barValue">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="skillBar">
+                            <div class="skillInfo">
+                                <p>ANYLOGIC</p>
+                                <p>50%</p>
+                            </div>
+                            <div class="barValue">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="skillBody" id="tools">
+                        <ul>
+                            <li><span>Visual Studio Code</span><br> &nbsp For Java, Web development, C#, Git </li>
+                            <li><span>QT Creator</span><br> &nbsp For C++, Python </li>
+                            <li><span>Eclipse</span><br> &nbsp For Java</li>
+                            <li><span>Octave</span><br> &nbsp For MATLAB </li>
+                            <li><span>Vim editor</span><br> &nbsp For Bash Scripting</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="rightPart">
+                    <h3>Professional Skills</h3>
+                    <div class="skillBody">
+                        <div class="skillBox">
+                            <div class="circle" data-dots="50" data-percent="90">
+                            </div>
+                            <div class="skillText">
+                                <big>90%</big>
+                                <small>Team Work</small>
+                            </div>
+                        </div>
+                        
+                        <div class="skillBox">
+                            <div class="circle" data-dots="50" data-percent="75">
+                            </div>
+                            <div class="skillText">
+                                <big>75%</big>
+                                <small>Problem Solving</small>
+                            </div>
+                        </div>
+
+                        <div class="skillBox">
+                            <div class="circle" data-dots="50" data-percent="90">
+                            </div>
+                            <div class="skillText">
+                                <big>90%</big>
+                                <small>Communication</small>
+                            </div>
+                        </div>
+                        
+                        <div class="skillBox">
+                            <div class="circle" data-dots="50" data-percent="70">
+                            </div>
+                            <div class="skillText">
+                                <big>70%</big>
+                                <small>Analytical Thinking</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="../js/skills.js"></script>
+    <script src="../js/responseHeader.js"></script>
+    <script src="../js/switchTabs.js"></script>
+</body>
+</html>

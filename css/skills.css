@@ -1,0 +1,325 @@
+.outerSkillContainer{
+    width: 100%;
+}
+
+.outerSkillContainer .skillsContainer{    
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: rgba(236, 190, 92, 0.911);
+}
+.skillsContainer h2{
+    font-weight: 700;
+    font-size: 36px;
+}
+.skillsContainer span{
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: #fdfdfd;
+    text-transform: uppercase;
+}
+
+.outerSkillContainer .mainContainer{
+    width: 100%;
+    margin: 1.5rem 1.5rem 0.5rem 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+
+.leftPart .skillBody{
+    padding: 3.5% 1% 1% 1%;
+}
+
+.tabNames{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tabs{
+    position: relative;
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tabs::after{
+    width: 0;
+    height: 3px;
+    content: '';
+    position: absolute;
+    left: 0;
+    background-color: #ff004f;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tabs.active-link::after{
+    width: 100%;
+}
+
+.leftPart .skillBody.active-tab{
+    display: block;
+}
+
+.leftPart .skillBody{
+    display: none;
+}
+
+.rightPart h3,
+.leftPart h3{
+    margin-bottom: 2rem;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.skillBar{
+    margin-bottom: 2.5rem;
+}
+
+.leftPart .skillBody .skillBar .skillInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+}
+
+.leftPart .skillBody .skillBar .barValue{
+    width: 100%;
+    height: 10px;
+    background-color: #250821;
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skillBar .barValue span{
+    height: 100%;
+    width: 50%;
+    left: 0;
+    position: absolute;
+    background: #fcb71d;
+    border-radius: 25px;
+    box-shadow: 0 0 0.5rem #12f7ff;
+}
+
+.skillBar .barValue .cpp{
+    width: 75%;
+    animation: cpp 1.5s;
+}
+
+.skillBar .barValue .cs{
+    width: 35%;
+    animation: cs 1.5s;
+}
+.skillBar .barValue .python{
+    width: 45%;
+    animation: python 1.5s;
+}
+.skillBar .barValue .java{
+    width: 75%;
+    animation: java 1.5s;
+}
+.skillBar .barValue .html{
+    width: 50%;
+    animation: html 1.5s;
+}
+.skillBar .barValue .css{
+    width: 50%;
+    animation: css 1.5s;
+}
+
+
+.rightPart .skillBody{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.skillBox{
+    flex: 1 1 15rem;
+    margin: 10px 0;
+    position: relative;
+}
+
+.skillBox .circle{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillBox .skillText{
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.skillBox .skillText big{
+    position: absolute;
+    letter-spacing: 1.3px;
+    left: 50%;
+    top: 40%;
+    font-weight: 400;
+    transform: translate(-50%, -50%);
+}
+
+.skillBox .skillText small{
+    font-weight: 600;
+    display: block;
+}
+
+.circle .points{
+    position: absolute;
+    border-radius: 2.5px;
+    background-color: #250821;
+    height: 10px;
+    width: 2px;
+    transform: rotate(calc(var(--i) * var(--rot))) translateY(-45px);
+}
+
+.points.mark{
+    animation: glow 0.05s linear forwards;
+    animation-delay: calc(var(--i)*0.05s);
+}
+
+.skillBody ul li{
+    list-style: none;
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.skillBody ul li span{
+    color: #fcb71d;
+    font-size: 22px;
+}
+
+
+
+
+
+/*  ------ responsive ------- */
+
+@media only screen and (max-width : 600px){
+    .outerSkillContainer .skillsContainer {
+        margin-bottom: -1.5rem;
+    }
+    .skillsContainer h2 {
+        font-size: 24px;
+    }
+    .skillsContainer span {
+        font-size: 0.6rem;
+    }
+    .outerSkillContainer .mainContainer {
+        width: 100%;
+        margin: 1.0rem;
+        padding: 1.0rem;
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 30px;
+    }
+    .mainContainer .leftPart,
+    .mainContainer .rightPart{
+        padding: 1rem;;
+    }
+    .rightPart h3, .leftPart h3 {
+        margin-bottom: 1rem;
+        font-size: 18px;
+    }
+    .tabs {
+        margin-right: 24px;
+        font-size: 12px;
+    }
+    .tabNames {
+        margin: 15px 0;
+    }
+    .leftPart .skillBody {
+        padding: 3.5%;
+    }
+    .skillBar {
+        margin-bottom: 1.5rem;
+    }
+    
+    .skillInfo p {
+        font-size: 14px;
+    }
+    .leftPart .skillBody .skillBar .barValue {
+        height: 7px;
+    }
+
+    .skillBody ul li {
+        font-size: 14px;
+    }
+    .skillBody ul li span {
+        font-size: 17px;
+    }
+}
+
+
+
+/* ******** animation */
+
+@keyframes glow{
+    0%{
+        background: #250821;
+        box-shadow: none;
+    }
+    100%{
+        background: #fcb71d;
+        box-shadow: 0 0 0.5rem #12f7ff;
+    }
+}
+
+@keyframes cpp{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes cs{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 35%;
+    }
+}
+
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 45%;
+    }
+}
+@keyframes java{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}

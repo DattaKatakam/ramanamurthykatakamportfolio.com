@@ -64,7 +64,7 @@
     
             <div class="rightSide">
     
-                <form action="#">
+                <form onsubmit="submitForm(); reset(); return false;">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="text" name="email" placeholder="Your Email" required>
                     <textarea type="text" name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -74,7 +74,8 @@
             </div>
         </div>
     </section>
-    
+    <script src = "https://smtpjs.com/v3/smtp.js"></script>
     <script src="../js/responseHeader.js"></script>
+    <script src="../js/submitFormData.js"></script>
 </body>
 </html>

@@ -41,189 +41,91 @@
 
     </header>
 
-    <section id="Skills" class="skills">
-        <div class="outerSkillContainer">
-            <div class="skillsContainer">
-                <h2>Meine Fähigkeiten</h2>
-                <span>Technisch und Professionell</span>
+    <section id="skills" class="skillsSection">
+        <div class="container">
+            <h2 class="sectionTitle">Meine Fähigkeiten</h2>
+            <p class="sectionSubtitle">Technisch & Professionell</p>
+
+            <!-- TECHNICAL SKILLS BLOCK -->
+            <div class="skillsGroup">
+                <h3 class="groupTitle">Technische Kompetenzen</h3>
+                <div class="skillsGrid">
+                    <!-- Programming Languages -->
+                    <div class="skillCategory">
+                        <h3>Sprachen</h3>
+                        <div class="skillItem"><span>C++</span><div class="bar"><div style="--value: 85%; width: 85%"></div></div></div>
+                        <div class="skillItem"><span>Python</span><div class="bar"><div style="--value: 80%; width: 80%"></div></div></div>
+                        <div class="skillItem"><span>Java</span><div class="bar"><div style="--value: 70%; width: 70%"></div></div></div>
+                        <div class="skillItem"><span>Shell Scripting</span><div class="bar"><div style="--value: 60%; width: 60%"></div></div></div>
+                        <div class="skillItem"><span>SQL</span><div class="bar"><div style="--value: 60%; width: 60%"></div></div></div>
+                    </div>
+
+                    <!-- Web & Frameworks -->
+                    <div class="skillCategory">
+                        <h3>Web & Frameworks</h3>
+                        <div class="skillItem"><span>HTML</span><div class="bar"><div style="--value: 60%; width: 60%"></div></div></div>
+                        <div class="skillItem"><span>CSS</span><div class="bar"><div style="--value: 55%; width: 55%"></div></div></div>
+                        <div class="skillItem"><span>Qt / QML</span><div class="bar"><div style="--value: 70%; width: 70%"></div></div></div>
+                        <div class="skillItem"><span>OpenGL</span><div class="bar"><div style="--value: 55%; width: 55%"></div></div></div>
+                    </div>
+
+                    <!-- CAD & Simulation -->
+                    <div class="skillCategory">
+                        <h3>Simulation & CAD</h3>
+                        <div class="skillItem"><span>SolidWorks</span><div class="bar"><div style="--value: 75%; width: 75%"></div></div></div>
+                        <div class="skillItem"><span>Fusion 360</span><div class="bar"><div style="--value: 50%; width: 50%"></div></div></div>
+                        <div class="skillItem"><span>CATIA</span><div class="bar"><div style="--value: 35%; width: 35%"></div></div></div>
+                        <div class="skillItem"><span>MATLAB</span><div class="bar"><div style="--value: 60%; width: 60%"></div></div></div>
+                        <div class="skillItem"><span>AnyLogic</span><div class="bar"><div style="--value: 50%; width: 50%"></div></div></div>
+                    </div>
+                </div>
             </div>
-            <div class="mainContainer">
-                <div class="leftPart">
-                    <h3>Technische Fähigkeiten</h3>
-                    
-                    <div class="tabNames">
-                        <p class="tabs active-link" onclick="switchTabs('software')">Software-Fähigkeiten</p>
-                        <p class="tabs" onclick="switchTabs('mechanical')">Mechanische Fähigkeiten</p>
-                        <p class="tabs" onclick="switchTabs('tools')">Tools (IDEs)</p>
-                    </div>
 
-                    <div class="skillBody active-tab" id="software">
-                        <div class="skillBar">
-                            <div class="skillInfo">
-                                <p>C++</p>
-                                <p>75%</p>
-                            </div>
-                            <div class="barValue">
-                                <span class="cpp"></span>
-                            </div>
-                        </div>
-
-                        <div class="skillBar">
-                            <div class="skillInfo">
-                                <p>Python</p>
-                                <p>75%</p>
-                            </div>
-                            <div class="barValue">
-                                <span class="python"></span>
-                            </div>
-                        </div>
-                        
-                        <div class="skillBar">
-                            <div class="skillInfo">
-                                <p>Java</p>
-                                <p>75%</p>
-                            </div>
-                            <div class="barValue">
-                                <span class="java"></span>
-                            </div>
-                        </div>
-                        
-                        <div class="skillBar">
-                            <div class="skillInfo">
-                                <p>HTML</p>
-                                <p>50%</p>
-                            </div>
-                            <div class="barValue">
-                                <span class="html"></span>
-                            </div>
-                        </div>
-                        
-                        <div class="skillBar">
-                            <div class="skillInfo">
-                                <p>CSS</p>
-                                <p>50%</p>
-                            </div>
-                            <div class="barValue">
-                                <span class="css"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skillBody" id="mechanical">
-                        <div class="skillBar">
-                            <div class="skillInfo">
-                                <p>SolidWorks</p>
-                                <p>75%</p>
-                            </div>
-                            <div class="barValue">
-                                <span class="cpp"></span>
-                            </div>
-                        </div>
-                        
-                        <div class="skillBar">
-                            <div class="skillInfo">
-                                <p>Fusion 360</p>
-                                <p>45%</p>
-                            </div>
-                            <div class="barValue">
-                                <span class="python"></span>
-                            </div>
-                        </div>
-    
-                        <div class="skillBar">
-                            <div class="skillInfo">
-                                <p>Catia</p>
-                                <p>35%</p>
-                            </div>
-                            <div class="barValue">
-                                <span class="cs"></span>
-                            </div>
-                        </div>
-
-                        <div class="skillBar">
-                            <div class="skillInfo">
-                                <p>Ansys</p>
-                                <p>45%</p>
-                            </div>
-                            <div class="barValue">
-                                <span class="cs"></span>
-                            </div>
-                        </div>
-
-                        <div class="skillBar">
-                            <div class="skillInfo">
-                                <p>MATLAB</p>
-                                <p>45%</p>
-                            </div>
-                            <div class="barValue">
-                                <span class="python"></span>
-                            </div>
-                        </div>
-                        
-                        <div class="skillBar">
-                            <div class="skillInfo">
-                                <p>ANYLOGIC</p>
-                                <p>50%</p>
-                            </div>
-                            <div class="barValue">
-                                <span class="html"></span>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="skillBody" id="tools">
-                        <ul>
-                            <li><span>Visual Studio Code</span><br> &nbsp Für Java, Web development, C#, Git </li>
-                            <li><span>QT Creator</span><br> &nbsp Für C++, Python </li>
-                            <li><span>Eclipse</span><br> &nbsp Für Java</li>
-                            <li><span>Octave</span><br> &nbsp Für MATLAB </li>
-                            <li><span>Vim editor</span><br> &nbsp Für Bash Scripting</li>
+            <!-- TOOLS BLOCK -->
+            <div class="skillsGroup">
+                <h3 class="groupTitle">Tools & Professionelle Fähigkeiten</h3>
+                <div class="skillsGrid">
+                    <div class="skillCategory">
+                        <h3>Tools & Entwicklungsumgebungen</h3>
+                        <ul class="toolList">
+                            <li><strong>Visual Studio Code</strong> – Java, Web, Git</li>
+                            <li><strong>Qt Creator</strong> – C++, GUI</li>
+                            <li><strong>CMake</strong> – Build Management</li>
+                            <li><strong>Docker</strong> – Containerisierung</li>
+                            <li><strong>GitHub</strong> – Versionierung</li>
                         </ul>
                     </div>
-
-                </div>
-                <div class="rightPart">
-                    <h3>Professionelle Fähigkeiten</h3>
-                    <div class="skillBody">
-                        <div class="skillBox">
-                            <div class="circle" data-dots="50" data-percent="90">
-                            </div>
-                            <div class="skillText">
-                                <big>90%</big>
-                                <small>Team Work</small>
-                            </div>
-                        </div>
-                        
-                        <div class="skillBox">
-                            <div class="circle" data-dots="50" data-percent="75">
-                            </div>
-                            <div class="skillText">
-                                <big>85%</big>
-                                <small>Problemlösung</small>
-                            </div>
-                        </div>
-
-                        <div class="skillBox">
-                            <div class="circle" data-dots="50" data-percent="90">
-                            </div>
-                            <div class="skillText">
-                                <big>90%</big>
-                                <small>Kommunikation</small>
-                            </div>
-                        </div>
-                        
-                        <div class="skillBox">
-                            <div class="circle" data-dots="50" data-percent="70">
-                            </div>
-                            <div class="skillText">
-                                <big>70%</big>
-                                <small>Analytisches Denkvermögen</small>
-                            </div>
-                        </div>
+                    <div class="skillCategory">
+                        <h3>Professionelle Fähigkeiten</h3>
+                        <ul class="softList">
+                            <li>Teamarbeit <strong>90%</strong></li>
+                            <li>Kommunikation <strong>90%</strong></li>
+                            <li>Problemlösung <strong>85%</strong></li>
+                            <li>Analytisches Denken <strong>75%</strong></li>
+                            <li>Anpassungsfähigkeit <strong>80%</strong></li>
+                            <li>Projektmanagement <strong>70%</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+
+            <!-- SOFT SKILLS BLOCK -->
+            <!-- <div class="skillsGroup">
+                <h3 class="groupTitle">Professionelle Fähigkeiten</h3>
+                <div class="skillsGrid">
+                    <div class="skillCategory">
+                        <ul class="softList">
+                            <li>Teamarbeit <strong>90%</strong></li>
+                            <li>Kommunikation <strong>90%</strong></li>
+                            <li>Problemlösung <strong>85%</strong></li>
+                            <li>Analytisches Denken <strong>75%</strong></li>
+                            <li>Anpassungsfähigkeit <strong>80%</strong></li>
+                            <li>Projektmanagement <strong>70%</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+
         </div>
     </section>
 

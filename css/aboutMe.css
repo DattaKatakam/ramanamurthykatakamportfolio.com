@@ -30,6 +30,17 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+@keyframes fadeInUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .aboutInfo h3{
@@ -41,12 +52,17 @@
     color: #fcb71d;
 }
 
-.aboutInfo p{
-    font-size: 18px;
-    width: 75%;
-    margin: 0 0 12px;
-    line-height: 24px;
-    letter-spacing: 1.35px;
+.aboutInfo p {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    max-width: 75%;
+    text-align: justify;
+    padding: 0 1.2rem;
+    color: #e0e0e0;
+}
+
+.aboutInfo p span{
+    color: #fcb71d;
 }
 
 .aboutMe .outerCont{
@@ -56,6 +72,47 @@
     align-items: center;
     grid-gap: 5rem;
 }
+
+.btnsbR {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.btnsbR a{
+    display: inline-flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    transition: 0.5s;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.btnsbR a i{
+    font-size: 1.25rem;
+}
+
+.btnsbR a:hover{
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .btns.bR {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.btn:hover {
+    background-color: #dca632;
+    color: #081b29;
+}
+
 .outerCont .imageContent{
     text-align: center;
     position: relative;
@@ -108,6 +165,7 @@
 
 .educationCol .educationContainer{
     border-left: 0.2rem solid #fcb71d;
+    margin-bottom: 2rem;
 }
 
 .educationContainer .educationCont{
@@ -167,6 +225,32 @@
     height: 1.5rem;
     background: #fcb71d;
     border-radius: 50%;
+}
+
+.contentContainer ul {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+.contentContainer li {
+    margin-bottom: 0.5rem;
+}
+.contentContainer li::marker {
+    color: #fcb71d;
+    font-size: 1.2rem;
+}
+
+.contentContainer strong {
+    color: #fcb71d;
+    font-weight: 600;
+}
+
+.contentContainer br {
+    line-height: 1.6;
 }
 
 .btns {

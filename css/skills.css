@@ -72,7 +72,7 @@
   font-size: 1rem;
 }
 
-.bar {
+.barSkills {
   width: 100%;
   height: 10px;
   background: #1a1a1a;
@@ -80,7 +80,7 @@
   overflow: hidden;
 }
 
-.bar div {
+.barSkills div {
   height: 100%;
   background: linear-gradient(90deg, #fcb71d, #ffcc70);
   border-radius: 20px;
@@ -111,7 +111,7 @@
 }
 
 /* ===== Responsive ===== */
-@media screen and (max-width: 768px) {
+@media only screen and (max-width : 600px) {
   .sectionTitle {
     font-size: 2rem;
   }

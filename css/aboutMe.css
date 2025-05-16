@@ -102,12 +102,12 @@
     color: #fff;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .btns.bR {
         flex-direction: column;
         align-items: center;
     }
-}
+} */
 .btn:hover {
     background-color: #dca632;
     color: #081b29;

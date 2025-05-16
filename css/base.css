@@ -120,14 +120,6 @@ section{
     display: none;
 }
 
-
-
-
-
-
-
-
-
 @media screen and (max-width: 1120px) {
     .navbar {
         display: none;
@@ -162,7 +154,7 @@ section{
     }
 }
 
-@media screen and (max-width: 600px){
+@media only screen and (max-width: 600px){
     .navbar {
         display: none;
         overflow: hidden;

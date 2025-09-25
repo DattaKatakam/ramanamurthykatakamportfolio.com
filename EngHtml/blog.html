@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Blog - RamanaMurthy Katakam</title>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="logo">
+            R<span>K</span>
+        </a>
+        <nav class="navbar">
+            <a href="../DeuHTML/blog.html">DE</a>
+            <a href="../index.html">Home</a>
+            <a href="aboutMe.html">AboutMe</a>
+            <a href="skills.html">MySkills</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="#">Blog</a>
+            <a href="contactMe.html">Contact Me</a>
+        </nav>
+        
+        <div class="hamburger-btn" onclick="openNavBar()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav class="mobile-navbar">
+            <a href="../DeuHTML/blog.html">DE</a>
+            <a href="../index.html">Home</a>
+            <a href="aboutMe.html">AboutMe</a>
+            <a href="skills.html">MySkills</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="#">Blog</a>
+            <a href="contactMe.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <section class="blog" id="blog">
+        <h1 class="mainTitle">My <span>Blog</span></h1>
+        
+        <div class="blog-intro">
+            <p>Welcome to my blog! Here I share my thoughts, experiences, and insights from my journey as a Software Engineer at Holy Technologies, my academic experiences, and the ever-evolving world of technology.</p>
+        </div>
+
+        <div class="blog-filters">
+            <button class="filter-btn active" onclick="filterPosts('all')">All Posts</button>
+            <button class="filter-btn" onclick="filterPosts('career')">Career</button>
+            <button class="filter-btn" onclick="filterPosts('tech')">Technology</button>
+            <button class="filter-btn" onclick="filterPosts('learning')">Learning</button>
+        </div>
+
+        <div class="blog-container">
+            <!-- Blog Post 1: Holy Technologies Journey -->
+            <article class="blog-post" data-category="career">
+                <div class="blog-post-header">
+                    <div class="blog-post-date">September 15, 2025</div>
+                    <h2 class="blog-post-title">Starting My Journey at Holy Technologies Hamburg</h2>
+                    <span class="blog-post-category">Career Update</span>
+                </div>
+                <div class="blog-post-content">
+                    <p>Exciting news! I've officially started my role as a <strong>Software Engineer at Holy Technologies</strong> in Hamburg, Germany. After successfully defending my Master's thesis with a grade of 1.3, this new chapter represents the culmination of years of academic preparation and hands-on experience.</p>
+                    
+                    <p>At Holy Technologies, I'm working with cutting-edge technologies including <strong>Python, Qt Framework, and OpenGL</strong> to develop robust desktop applications. The role involves everything from creating executable distributions with PyInstaller to implementing comprehensive testing strategies and API integrations.</p>
+                    
+                    <p>What excites me most is the opportunity to apply the theoretical knowledge I gained during my Digital Engineering studies to real-world challenges. The transition from academic projects to production-ready software development has been both challenging and incredibly rewarding.</p>
+                </div>
+                <div class="blog-post-footer">
+                    <div class="blog-post-tags">
+                        <span class="blog-tag">Career</span>
+                        <span class="blog-tag">Holy Technologies</span>
+                        <span class="blog-tag">Python</span>
+                        <span class="blog-tag">Qt</span>
+                    </div>
+                    <div class="blog-post-links">
+                        <a href="https://www.linkedin.com/in/ramanamurthy-katakam-9b44ba18b/" class="blog-link" target="_blank" title="Share on LinkedIn">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog Post 2: Forvia Hella Journey -->
+            <article class="blog-post" data-category="career">
+                <div class="blog-post-header">
+                    <div class="blog-post-date">April 2, 2025</div>
+                    <h2 class="blog-post-title">11 Months at Forvia Hella: Building Industry-Grade Software Solutions</h2>
+                    <span class="blog-post-category">Internship & Thesis</span>
+                </div>
+                <div class="blog-post-content">
+                    <p>My journey at <strong>Forvia Hella</strong> (May 2024 - March 2025) was transformative, working as both an intern and thesis student in Lippstadt. This 11-month experience shaped my understanding of professional software development and real-world problem solving.</p>
+                    
+                    <p>I designed and deployed advanced software solutions to automate vibration analysis workflows. My <strong>High-Speed Camera Image Acquisition Tool</strong> built with C++ and Qt integrated real-time zoom, exposure detection, and dynamic measurement visualization, reducing workflow time from 2 days to just 8 hours while eliminating reliance on third-party tools.</p>
+                    
+                    <p>The crown jewel was <strong>"Animator"</strong> – a comprehensive 3D motion visualization application that replaced costly tools like Hyper Mesh and Hyperview. With features like skeleton generation, tracking point selection, FRF analysis, and vibration flow analysis, it cut workflow time from 12+ hours to just 4 hours, saving significant licensing costs.</p>
+                    
+                    <p>This experience taught me the importance of user-centric design, multi-threaded architectures, and delivering polished solutions that drive efficiency across cross-functional teams.</p>
+                </div>
+                <div class="blog-post-footer">
+                    <div class="blog-post-tags">
+                        <span class="blog-tag">Forvia Hella</span>
+                        <span class="blog-tag">C++</span>
+                        <span class="blog-tag">Qt</span>
+                        <span class="blog-tag">Vibration Analysis</span>
+                    </div>
+                    <div class="blog-post-links">
+                        <a href="https://www.linkedin.com/in/ramanamurthy-katakam-9b44ba18b/" class="blog-link" target="_blank" title="Share on LinkedIn">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog Post 3: 3D Printer Control Application -->
+            <article class="blog-post" data-category="tech">
+                <div class="blog-post-header">
+                    <div class="blog-post-date">August 15, 2025</div>
+                    <h2 class="blog-post-title">Building a Digital Twin: 3D Printer Control Application</h2>
+                    <span class="blog-post-category">Research Project</span>
+                </div>
+                <div class="blog-post-content">
+                    <p>During my <strong>Research Assistant role</strong> (June-July 2025) at Juniorprofessur Werkstoffmechanik, I independently designed and developed a full-stack desktop application to control and monitor a concrete 3D printer in real time.</p>
+                    
+                    <p>The project involved building a <strong>digital twin of the printer using PyQt</strong> with MVC architecture for real-time visualization, control, and data acquisition. I implemented G-code injection, live sensor feedback, and operational control through a custom GUI.</p>
+                    
+                    <p>What made this project special was the complete development cycle – from design and implementation to testing and deployment. I used <strong>GitLab for agile development</strong>, tracked issues, created milestones, and packaged the application into standalone .exe files using PyInstaller for easy deployment.</p>
+                    
+                    <p>This experience reinforced my passion for creating intuitive, real-time control systems and demonstrated the power of digital twins in manufacturing applications.</p>
+                </div>
+                <div class="blog-post-footer">
+                    <div class="blog-post-tags">
+                        <span class="blog-tag">PyQt</span>
+                        <span class="blog-tag">Digital Twin</span>
+                        <span class="blog-tag">Real-time Control</span>
+                        <span class="blog-tag">3D Printing</span>
+                    </div>
+                    <div class="blog-post-links">
+                        <a href="https://www.linkedin.com/in/ramanamurthy-katakam-9b44ba18b/" class="blog-link" target="_blank" title="Share on LinkedIn">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog Post 4: C++ Research Assistant Journey -->
+            <article class="blog-post" data-category="learning">
+                <div class="blog-post-header">
+                    <div class="blog-post-date">May 10, 2025</div>
+                    <h2 class="blog-post-title">2.5 Years as C++ Research Assistant: Building Mathematical Libraries</h2>
+                    <span class="blog-post-category">Research Experience</span>
+                </div>
+                <div class="blog-post-content">
+                    <p>From December 2022 to April 2025, I spent <strong>2.5 years as a C++ Research Assistant</strong> at Bauhaus-Universität Weimar, developing mathematical libraries and signal processing applications for research in numerical algorithms and real-time data processing.</p>
+                    
+                    <p>This role involved developing <strong>C++ libraries for solving linear and nonlinear equations</strong> and implementing machine learning algorithms like K-Means clustering and SVM. I designed Qt-based GUI applications for real-time data visualization and signal processing, making complex algorithms accessible to researchers.</p>
+                    
+                    <p>One of the most challenging aspects was <strong>optimizing algorithm performance</strong> for large-scale computations. I integrated advanced signal processing functions into research applications, improving data accuracy and processing speed. This work required deep understanding of both theoretical mathematics and practical software engineering.</p>
+                    
+                    <p>This long-term role taught me the importance of writing maintainable, well-documented code and how academic research can drive innovative software solutions. The experience laid a solid foundation for my current work in professional software development.</p>
+                </div>
+                <div class="blog-post-footer">
+                    <div class="blog-post-tags">
+                        <span class="blog-tag">C++</span>
+                        <span class="blog-tag">Research</span>
+                        <span class="blog-tag">Signal Processing</span>
+                        <span class="blog-tag">Machine Learning</span>
+                    </div>
+                    <div class="blog-post-links">
+                        <a href="https://www.linkedin.com/in/ramanamurthy-katakam-9b44ba18b/" class="blog-link" target="_blank" title="Share on LinkedIn">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog Post 5: Web Development Experience -->
+            <article class="blog-post" data-category="tech">
+                <div class="blog-post-header">
+                    <div class="blog-post-date">March 5, 2025</div>
+                    <h2 class="blog-post-title">Bridging Virtual Collaboration: Web Development at eTeach-Netzwerk</h2>
+                    <span class="blog-post-category">Web Development</span>
+                </div>
+                <div class="blog-post-content">
+                    <p>During my year-long role (June 2024 - June 2025) as <strong>Web Developer Research Assistant</strong> at eTeach-Netzwerk Thüringen, I worked on virtual meeting integrations and website development using WordPress, Elementor, and MeSe Calendar plugins.</p>
+                    
+                    <p>A key achievement was <strong>integrating tools for virtual meetings within WorkAdventure</strong>, enhancing online collaboration for educational institutions. I assisted in deploying and maintaining organizational websites, improving internal communication across multiple departments.</p>
+                    
+                    <p>I also explored <strong>chatbot integration for interactive web solutions</strong>, enhancing user engagement and providing automated support for users. This role showed me how web technologies can transform educational experiences and organizational efficiency.</p>
+                    
+                    <p>Working with diverse stakeholders taught me the importance of user-centered design and how technology can bridge geographical gaps in education and collaboration.</p>
+                </div>
+                <div class="blog-post-footer">
+                    <div class="blog-post-tags">
+                        <span class="blog-tag">WordPress</span>
+                        <span class="blog-tag">Web Development</span>
+                        <span class="blog-tag">Virtual Collaboration</span>
+                        <span class="blog-tag">Education</span>
+                    </div>
+                    <div class="blog-post-links">
+                        <a href="https://www.linkedin.com/in/ramanamurthy-katakam-9b44ba18b/" class="blog-link" target="_blank" title="Share on LinkedIn">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog Post 6: Master's Thesis Success -->
+            <article class="blog-post" data-category="learning">
+                <div class="blog-post-header">
+                    <div class="blog-post-date">July 11, 2025</div>
+                    <h2 class="blog-post-title">Successfully Defending My Master's Thesis: A Journey of Growth</h2>
+                    <span class="blog-post-category">Academic Achievement</span>
+                </div>
+                <div class="blog-post-content">
+                    <p>I'm thrilled to share that I successfully defended my Master's thesis in Digital Engineering at Bauhaus-Universität Weimar on <strong>July 11, 2025</strong> with a grade of <strong>1.3</strong>! My overall Master's degree was completed with a grade of 2.1.</p>
+                    
+                    <p>My thesis focused on developing a robust GUI for converting experimental measurement data into Finite Element Analysis-ready formats. This project combined my passion for <strong>software engineering with applied research</strong>, utilizing technologies like C++, Python, and MATLAB.</p>
+                    
+                    <p>The journey wasn't just about the technical challenges – it was about learning to balance complex requirements, user needs, and performance optimization. The experience has shaped my approach to software development and reinforced my commitment to creating user-centric solutions.</p>
+                </div>
+                <div class="blog-post-footer">
+                    <div class="blog-post-tags">
+                        <span class="blog-tag">Education</span>
+                        <span class="blog-tag">Thesis</span>
+                        <span class="blog-tag">Digital Engineering</span>
+                        <span class="blog-tag">Research</span>
+                    </div>
+                    <div class="blog-post-links">
+                        <a href="https://www.linkedin.com/in/ramanamurthy-katakam-9b44ba18b/" class="blog-link" target="_blank" title="Share on LinkedIn">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <script src="../js/responseHeader.js"></script>
+    <script>
+        function filterPosts(category) {
+            const posts = document.querySelectorAll('.blog-post');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Filter posts
+            posts.forEach(post => {
+                if (category === 'all' || post.dataset.category === category) {
+                    post.style.display = 'block';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
